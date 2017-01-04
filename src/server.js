@@ -13,5 +13,13 @@ router.get('/', function(req, res) {
     res.json({ message: 'Hello, World!', version: '1.0' });
 });
 
+app.use('/api', router);
+
+app.use(function(req, res, next) {
+  var error = new Error('Cannot ' + req.method + ' ' + req.path);
+  error.status = 404;
+  next(error);
+});
+
 app.listen(port);
 console.log('Starting server.js on port ' + port);
