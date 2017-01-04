@@ -1,0 +1,14 @@
+{
+  "name": "ecs-demo-simple-restapi",
+  "version": "1.0.0",
+  "description": "REST API server on Docker",
+  "author": "Hideyo Yoshida",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "json-parser": "~1.0.1"
+  }
+}
