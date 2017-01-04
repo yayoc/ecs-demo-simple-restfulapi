@@ -1,0 +1,19 @@
+{
+    "family": "simple-api",
+    "containerDefinitions": [
+        {
+            "environment": [],
+            "name": "simple-api",
+            "image": "node/boron",
+            "cpu": 10,
+            "memory": 500,
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 80
+                }
+            ],
+            "essential": true
+        }
+    ]
+}
