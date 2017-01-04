@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "express": "^4.13.3",
-    "json-parser": "~1.0.1"
+    "body-parser": "~1.0.1"
   }
 }
