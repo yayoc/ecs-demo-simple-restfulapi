@@ -10,7 +10,7 @@ var port = process.env.PORT || 8080;
 var router = express.Router();
 
 router.get('/', function(req, res) {
-    res.json({ message: 'Hello, World!', version: '2.0' });
+    res.json({ message: 'Hello, World!', version: '3.0' });
 });
 
 app.use('/api', router);
